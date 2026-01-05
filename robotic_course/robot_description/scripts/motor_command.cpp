@@ -40,8 +40,8 @@ private:
                     left_motor_rad_per_sec, right_motor_rad_per_sec);
 
         // rad/s to RPM conversion
-        double left_motor_rpm  = left_motor_rad_per_sec * (60.0 / (2.0 * M_PI)) ;
-        double right_motor_rpm = right_motor_rad_per_sec * (60.0 / (2.0 * M_PI)) ;
+        double left_motor_rpm  = left_motor_rad_per_sec  ;
+        double right_motor_rpm = right_motor_rad_per_sec ;
         // (60.0 / (2.0 * M_PI))
 
         RCLCPP_INFO(this->get_logger(), "Left RPM: %f , Right RPM: %f",
